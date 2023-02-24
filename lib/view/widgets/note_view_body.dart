@@ -16,14 +16,3 @@ class notesviewbody extends StatelessWidget {
     ]);
   }
 }
-
-class Noteslistview extends StatelessWidget {
-  const Noteslistview({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return ListView.builder(itemBuilder: (context, index) {
-      return Noteitem();
-    });
-  }
-}
