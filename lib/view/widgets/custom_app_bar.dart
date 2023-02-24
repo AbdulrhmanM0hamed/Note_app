@@ -5,17 +5,20 @@ class customappbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Text(
-          'Notes',
-          style: TextStyle(
-            fontSize: 28,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: Row(
+        children: [
+          Text(
+            'Notes',
+            style: TextStyle(
+              fontSize: 28,
+            ),
           ),
-        ),
-        Spacer(),
-        customiconsearcch(),
-      ],
+          Spacer(),
+          customiconsearcch(),
+        ],
+      ),
     );
   }
 }
@@ -29,11 +32,14 @@ class customiconsearcch extends StatelessWidget {
       height: 45,
       width: 45,
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(.1),
+        color: Colors.white.withOpacity(.05),
         borderRadius: BorderRadius.circular(20),
       ),
-      child: Center(
-        child: Icon(Icons.search),
+      child: const Center(
+        child: Icon(
+          Icons.search,
+          size: 28,
+        ),
       ),
     );
   }
