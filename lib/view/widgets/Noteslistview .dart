@@ -4,6 +4,13 @@ import 'package:flutter/material.dart';
 class Noteslistview extends StatelessWidget {
   const Noteslistview({super.key});
 
+  /*var date = [
+    Colors.white,
+    Colors.red,
+    Colors.yellow,
+    Colors.blue,
+    Colors.lightGreenAccent
+  ];*/
   @override
   Widget build(BuildContext context) {
     return Padding(
