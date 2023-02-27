@@ -23,8 +23,8 @@ class NotesView extends StatelessWidget {
         child: Icon(
           Icons.add,
         ),
-        backgroundColor: Color.fromARGB(255, 94, 200, 233),
-        foregroundColor: Color.fromARGB(255, 0, 0, 0),
+        backgroundColor: Color.fromARGB(255, 113, 79, 236),
+        foregroundColor: Color.fromARGB(255, 255, 255, 255),
       ),
       body: notesviewbody(),
     );
