@@ -9,11 +9,20 @@ class addnote extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Column(
-        children: [
+        children: const [
           SizedBox(
             height: 40,
           ),
-          customtextfield(),
+          customtextfield(
+            hint: 'Title',
+          ),
+          SizedBox(
+            height: 16,
+          ),
+          customtextfield(
+            hint: 'Content',
+            maxlines: 5,
+          ),
         ],
       ),
     );

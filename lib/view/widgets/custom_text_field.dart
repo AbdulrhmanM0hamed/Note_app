@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/painting/border_radius.dart';
 
 class customtextfield extends StatelessWidget {
-  const customtextfield({super.key});
+  const customtextfield({super.key, required this.hint, this.maxlines = 1});
+
+  final String hint;
+  final int maxlines;
 
   @override
   Widget build(BuildContext context) {
-    return const TextField(
+    return TextField(
+      maxLines: maxlines,
       decoration: InputDecoration(
-        hintText: 'Title',
+        hintText: hint,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(10)),
           borderSide: BorderSide(
