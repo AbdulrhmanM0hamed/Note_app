@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 class customappbar extends StatelessWidget {
-  const customappbar({super.key});
+  const customappbar({super.key, required this.title, required this.icon});
 
+  final String title;
+  final IconData icon;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -10,13 +12,13 @@ class customappbar extends StatelessWidget {
       child: Row(
         children: [
           Text(
-            'Notes',
-            style: TextStyle(
+            title,
+            style: const TextStyle(
               fontSize: 28,
             ),
           ),
           Spacer(),
-          customiconsearcch(),
+          customiconsearcch(icon: icon),
         ],
       ),
     );
@@ -24,8 +26,8 @@ class customappbar extends StatelessWidget {
 }
 
 class customiconsearcch extends StatelessWidget {
-  const customiconsearcch({super.key});
-
+  const customiconsearcch({super.key, required this.icon});
+  final IconData icon;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -35,11 +37,9 @@ class customiconsearcch extends StatelessWidget {
         color: Colors.white.withOpacity(.05),
         borderRadius: BorderRadius.circular(20),
       ),
-      child: const Center(
-        child: Icon(
-          Icons.search,
-          size: 28,
-        ),
+      child: IconButton(
+        onPressed: () {},
+        icon: Icon(icon),
       ),
     );
   }
