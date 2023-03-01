@@ -45,16 +45,17 @@ class custombutton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: MediaQuery.of(context).size.width, // ياخد العرض على قد الاسكرين
-        height: 55,
-        decoration: BoxDecoration(
-            color: Color.fromARGB(255, 113, 79, 236),
-            borderRadius: BorderRadius.circular(8)),
-        child: Center(
-          child: Text(
-            'Add',
-            style: TextStyle(fontSize: 18),
-          ),
-        ));
+      width: MediaQuery.of(context).size.width, // ياخد العرض على قد الاسكرين
+      height: 55,
+      decoration: BoxDecoration(
+          color: Color.fromARGB(255, 113, 79, 236),
+          borderRadius: BorderRadius.circular(8)),
+      child: Center(
+        child: Text(
+          'Add',
+          style: TextStyle(fontSize: 18),
+        ),
+      ),
+    );
   }
 }
